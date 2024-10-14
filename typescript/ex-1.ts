@@ -3,10 +3,12 @@
 
 function reverseString(str: string): string {
   if (!str) {
-    return "You must provide a string in order to reverse it.";
+    // return "You must provide a string in order to reverse it.";
+    return "";
   }
 
-  const reversedString = str.split("").reverse().toString().replaceAll(",", "");
+  //   const reversedString = str.split("").reverse().toString().replaceAll(",", "");
+  const reversedString = str.split("").reverse().join("");
 
   return reversedString;
 }
